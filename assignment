@@ -1,0 +1,135 @@
+Assignment Title: Building a Retrieval-Augmented Generation (RAG) Pipeline with LangChain and Evaluation
+
+Objective:
+
+In this assignment, students will create a Retrieval-Augmented Generation (RAG) system using LangChain. The task involves building a chatbot capable of answering questions based on specific documents (text, word or PDF), with added features like memory for context-aware conversations, synthetic data generation for evaluation, and a user interface for interaction.
+
+---
+
+Task Breakdown:
+
+Task 1: Set up the RAG inferencing pipeline
+
+1. Objective: Extract, clean, chunk, and index data into a vector database.
+
+2. Requirements:
+
+o Use LangChain libraries for extracting, preprocessing (cleaning), chunking, and indexing the data.
+
+o Use any OpenAI embedding model like text-embedding-ada-002.
+
+o Choose a suitable vector database like chromadb, Azure AI search, FAISS, Pinecone, or Weaviate to store the document embeddings.
+
+o Document the steps of the pipeline setup, including the rationale behind the tools and techniques used.
+
+Deliverable:
+
+o A .py file showing the process of extraction, cleaning, chunking, and indexing.
+
+o A description of how each component of the pipeline contributes to retrieval.
+
+---
+
+Task 2: Build a Question-Answering Chatbot
+
+1. Objective: Create a chatbot that can answer questions solely based on the content of a document.
+
+2. Requirements:
+
+o Utilize LangChain to integrate the chatbot with the vector database for retrieval.
+
+o Use an Azure OpenAI model like GPT-35-Turbo for generation.
+
+o Implement the LangChain Expression Language (LCEL) for query flexibility and language manipulation.
+
+o Experiment with different retrieval accuracy enhancement techniques like:
+
+§ Modifying chunk sizes, experiment with prompting techniques
+
+§ Using diverse embeddings models
+
+§ Adjusting vector search parameters
+
+Deliverable:
+
+o A functional chatbot that only answers queries based on the selected document.
+
+o A report on the retrieval accuracy improvements attempted.
+
+---
+
+Task 3: Synthetic Data Generation & Evaluation with RAGAS or Deepeval
+
+1. Objective: Generate synthetic data and evaluate your chatbot’s performance using metrics like those provided by RAGAS or Deepeval.
+
+2. Requirements:
+
+o Generate synthetic data needed for evaluation for your chosen method(RAGAS or Deepeval).
+
+o Evaluate performance using standard metrics
+
+o Calculate individual metrics and compute overall accuracy using either RAGAS or Deepeval.
+
+Deliverable:
+
+o A write-up detailing the evaluation metrics used.
+
+o A document showing the individual metric calculations and overall accuracy score.
+
+---
+
+Task 4: Add Memory for Contextual Conversations
+
+1. Objective: Implement memory in the chatbot to enable context-aware conversations.
+
+2. Requirements:
+
+o Use LangChain’s memory features to allow the chatbot to remember and reference previous interactions.
+
+o Ensure that the chatbot can track ongoing conversations and respond in context.
+
+Deliverable:
+
+o A demonstration of memory functionality in the chatbot (e.g., remembering past interactions within a session).
+
+o Explanation of how memory enhances the user experience in chat applications.
+
+---
+
+Task 5: Create a User Interface for Your Chatbot
+
+1. Objective: Develop a simple user interface (UI) to interact with your chatbot.
+
+2. Requirements:
+
+o Use frameworks such as Streamlit or plain HTML/CSS/JS to create the UI.
+
+o The UI should allow control over parameters like top_k, temperature, input question and response.
+
+o Implement features like a streaming response where the chatbot’s output is displayed in real time.
+
+Deliverable:
+
+o A functional UI for the chatbot with parameter controls.
+
+o A short video demo or detailed documentation explaining the UI features.
+
+---
+
+Evaluation Criteria:
+
+· Code Quality: Clean, well-documented code with a logical structure.
+
+· Functionality: Correct implementation of all required components (RAG pipeline, chatbot, memory, UI).
+
+· Innovation: Experimentation with retrieval accuracy, synthetic data generation, and memory functionalities.
+
+· Writeup Quality: Clarity and depth in explaining the methods, metrics, and results.
+
+· UI Design: Usability, responsiveness, and control over chatbot settings.
+
+Submission Instructions:
+
+· Submit your code, UI, and writeup in a zip file or through a GitHub repository.
+
+· Include supporting screenshots.
